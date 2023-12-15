@@ -16,6 +16,10 @@ header ul{
     list-style: none;
     background-color: brown;
     align-items: center;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+
 }
 
 header li {
@@ -31,7 +35,15 @@ header li {
     /* background-image: url(../images/DSC03222.jpg); */
     height: 50rem;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.sideButton {
+    width: 5rem;
+    background-color: rgba(0, 0, 0, 0.44);
+    color: white;
+    border: none;
 }

@@ -1,44 +1,25 @@
-//let imageContainer = document.getElementById(imageContainer);
-// var leftButton = document.getElementById(leftButton)
-
-document.body.style.backgroundImage = "url('./DSC03222.jpg')";
-
-
-// window.addEventListener("DOMContentLoaded", (event) => {
-//     const rightButton = document.getElementById('rightButton');
-//     if (rightButton) {
-//         rightButton.addEventListener('click', (
-//             imageContainer.style.backgroundImage= "url('../images/DSC03224')"
-//             ), false);
-//     }
-// });
+var imageContainer = document.getElementById(imageContainer);
+var leftButton = document.getElementById(leftButton);
+var images = ["url('src/images/DSC03222.jpg')","url('src/images/DSC03224.jpg')","url('src/images/DSC03228.jpg')","url('src/images/DSC03368.jpg')","url('src/images/DSC03504.jpg')",
+"url('src/images/DSC03514.jpg')","url('src/images/DSC03518-Enhanced-NR.jpg')","url('src/images/DSC03528.jpg')","url('src/images/DSC03575.jpg')","url('src/images/DSC03581.jpg')"]
+var slideTime = 2000;
+var imageNumber = 0;
 
 
+document.getElementById("imageContainer").style.backgroundImage= images[0];
+document.getElementById("leftButton").innerHTML = " < "
+document.getElementById("rightButton").innerHTML = " > "
 
-// var images = ['../images/DSC03224','../images/DSC03581','../images/DSC03228']
-// var slideTime = 2000;
+const rightElement = document.getElementById("rightButton");
+rightElement.addEventListener("click", cycleImage, slideTime);
 
-// rightButton.cycleUp = false;
-
-// rightButton.addEventListener('click',function(event){
-//     if(this.cycleUp) return;
-//     this.cycleUp = true;
-
-//     var imageNumber = 0;
-//     var newInterval = setInterval(function(){
-
-//         imageContainer.setAttribute('src',images[imageNumber]);
-
-//         if(imageNumber==images.length-1){
-//             imageNumber = 0;
-//         } else {
-//             imageNumber++;
-//         }
-//     },slideTime);
-
-// }); 
-
-// rightButton.addEventListener('click', changePictureRight);
-// leftButton.addEventListener('click', changePictureRight);
-
+function cycleImage(){
+    if(imageNumber<images.length){
+        imageNumber++;
+        //console.log(imageNumber);
+        document.getElementById("imageContainer").style.backgroundImage = images[imageNumber];
+    }else{
+        imageNumber = 0;
+    };
+};
 
