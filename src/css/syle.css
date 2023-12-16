@@ -12,10 +12,9 @@ header {
 
 header ul{
     height: 4rem;
-    border-bottom-left-radius: 20rem;
-    border-bottom-right-radius: 20rem;
     width: 100%;
     margin: 0;
+    padding: 0;
     display: flex;
     list-style: none;
     background-color: rgba(255, 255, 255, 0.685);
