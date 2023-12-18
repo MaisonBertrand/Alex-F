@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+* {
+    font-family: 'Playfair Display', serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -47,12 +53,15 @@ header li {
     width: 11rem;
     align-self: center;
     margin-right: 32rem;
-    margin-bottom: 15rem;
+    margin-bottom: 6rem;
     padding: 2rem;
-    border-radius: 4rem;
+    /* border-radius: 4rem; */
     background: rgba(255, 255, 255, 0.685);
     border-style: solid;
     border-width: 1px;
+}
+.welcome-card h1 {
+    margin: 0;
 }
 .sideButton {
     width: 5rem;

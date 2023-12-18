@@ -14,7 +14,7 @@ const rightElement = document.getElementById("rightButton");
 rightElement.addEventListener("click", cycleImage, slideTime);
 
 function cycleImage(){
-    if(imageNumber<images.length){
+    if(imageNumber<=images.length){
         imageNumber++;
         //console.log(imageNumber);
         document.getElementById("imageContainer").style.backgroundImage = images[imageNumber];
