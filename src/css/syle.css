@@ -36,10 +36,15 @@ header li {
     font-size: small;
 }
 .name {
+    font-style: italic;
     font-size: 40px;
     width: max-content;
 }
-
+.cardName {
+    display: inline;
+    font-style: italic;
+    width: max-content;
+}
 .imageContainer {
     /* background-image: url(../images/DSC03222.jpg); */
     height: 50rem;
@@ -50,15 +55,19 @@ header li {
     width: 100%;
 }
 .welcome-card {
-    width: 11rem;
+    display: flex;
+    font-size: 12px;
+    width: 13rem;
     align-self: center;
-    margin-right: 32rem;
-    margin-bottom: 6rem;
-    padding: 2rem;
+    margin-right: 60%;
+    margin-bottom: 19rem;
+    padding: 1rem;
     /* border-radius: 4rem; */
     background: rgba(255, 255, 255, 0.685);
     border-style: solid;
     border-width: 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .welcome-card h1 {
     margin: 0;
