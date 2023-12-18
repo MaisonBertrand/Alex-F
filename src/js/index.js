@@ -11,15 +11,27 @@ document.getElementById("leftButton").innerHTML = " < "
 document.getElementById("rightButton").innerHTML = " > "
 
 const rightElement = document.getElementById("rightButton");
-rightElement.addEventListener("click", cycleImage, slideTime);
+const leftElement = document.getElementById("leftButton");
+rightElement.addEventListener("click", cycleImageRight, slideTime);
+leftElement.addEventListener("click", cycleImageLeft, slideTime);
 
-function cycleImage(){
+function cycleImageRight(){
     if(imageNumber<=images.length){
         imageNumber++;
         //console.log(imageNumber);
         document.getElementById("imageContainer").style.backgroundImage = images[imageNumber];
     }else{
         imageNumber = 0;
+    };
+};
+
+function cycleImageLeft(){
+    if(imageNumber>=0){
+        imageNumber--;
+        //console.log(imageNumber);
+        document.getElementById("imageContainer").style.backgroundImage = images[imageNumber];
+    }else{
+        imageNumber = images.length;
     };
 };
 
