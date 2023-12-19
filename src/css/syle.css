@@ -49,6 +49,7 @@ header li {
     width: max-content;
 }
 .cardName {
+    padding: 0 0 0 0.5rem;
     display: inline;
     font-style: italic;
     width: max-content;
@@ -70,7 +71,7 @@ header li {
     font-size: 12px;
     width: 13rem;
     align-self: center;
-    margin-right: 60%;
+    margin-right: 40%;
     margin-bottom: 19rem;
     padding: 1rem;
     /* border-radius: 4rem; */
@@ -101,6 +102,10 @@ header li {
         font-size: 2px;
     }
 
+    body{
+        width: 100%;
+    }
+
     header ul{
         height: 3rem;
     
@@ -116,9 +121,21 @@ header li {
         font-size: 20px;
         width: max-content;
     }
+    .welcome-card {
+        margin-right: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    /* .cardName {
+        padding: 0 0 0 0.5rem;
+    } */
     .imageContainer {
+        height: 42rem;
         
     }
-
+    .sideButton {
+        width: 2rem;
+    }   
 
   }
+
