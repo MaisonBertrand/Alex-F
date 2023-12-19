@@ -11,6 +11,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
 header {
     top: 0;
     position: absolute;
@@ -45,6 +53,9 @@ header li {
     font-style: italic;
     width: max-content;
 }
+.card-wallpaper {
+    width: 100%;
+}
 .imageContainer {
     /* background-image: url(../images/DSC03222.jpg); */
     height: 50rem;
@@ -78,3 +89,36 @@ header li {
     color: white;
     border: none;
 }
+
+
+@media only screen and (max-width: 960px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        font-size: 2px;
+    }
+
+    header ul{
+        height: 3rem;
+    
+    }
+    
+    header li {
+        margin: 0.75rem;
+        font-size: 4em;
+
+    }
+    .name {
+        font-style: italic;
+        font-size: 20px;
+        width: max-content;
+    }
+    .imageContainer {
+        
+    }
+
+
+  }
