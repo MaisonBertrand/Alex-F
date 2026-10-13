@@ -365,7 +365,7 @@
         min-height: 530px;
         display: flex;
         align-items: end;
-        background: linear-gradient(180deg, rgba(21, 32, 30, .08) 20%, rgba(21, 32, 30, .86)), url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1000&q=85') center/cover;
+        background: linear-gradient(180deg, rgba(21, 32, 30, .08) 20%, rgba(21, 32, 30, .86)), url('src/images/Car Pictures/DSC03581.jpg') center/cover;
         color: white
       }
 
@@ -435,10 +435,33 @@
         margin: 10px 0 22px
       }
 
-      .mobile-portfolio .photo {
+      .mobile-gallery {
+        display: grid;
+        gap: 16px;
+      }
+
+      .mobile-gallery .photo {
         height: 290px;
         border-radius: var(--radius);
-        background-image: url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=900&q=85')
+      }
+
+      .mobile-gallery .photo:nth-child(1) {
+        background-image: url('src/images/Car Pictures/DSC03528.jpg');
+      }
+
+      .mobile-gallery .photo:nth-child(2) {
+        background-image: url('src/images/Yosemite prints/DSC01463-Pano.jpg');
+      }
+
+      .mobile-gallery .photo:nth-child(3) {
+        background-image: url('src/images/Contax1.jpg');
+      }
+
+      .mobile-about-photo {
+        height: 290px;
+        border-radius: var(--radius);
+        background-image: url('src/images/Contax4.jpg');
+        margin-top: 22px;
       }
 
       .mobile-portfolio p {
@@ -598,8 +621,20 @@
     <section class="mobile-portfolio">
       <div class="container"><span class="eyebrow">Explore</span>
         <h2>Behind the lens</h2>
-        <div class="photo" role="img" aria-label="Camera photography"></div>
+        <div class="mobile-gallery" aria-label="Photography gallery">
+          <div class="photo" role="img" aria-label="Automotive photography"></div>
+          <div class="photo" role="img" aria-label="Landscape photography"></div>
+          <div class="photo" role="img" aria-label="Camera photography"></div>
+        </div>
         <p>Great images begin with curiosity, care and the right tools.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container mobile-intro">
+        <span class="eyebrow">About us</span>
+        <h2>Photography with care at every step</h2>
+        <p>Creative photography and appreciation for the tools that make it possible.</p>
+        <div class="photo mobile-about-photo" role="img" aria-label="Camera equipment detail"></div>
       </div>
     </section>
     <section class="cta"><span class="eyebrow">Let's connect</span>
